@@ -6,7 +6,7 @@ describe('SignUp Controller', () => {
         const sut = new SignUpController()
         const httpRequest = {
             Body: {
-                email: 'any_email@mail.com',
+                Email: 'any_email@mail.com',
                 Password: 'any_password',
                 PasswordConfirmation: 'any_password'
             }
@@ -19,9 +19,9 @@ describe('SignUp Controller', () => {
         const sut = new SignUpController()
         const httpRequest = {
             Body: {
-                name: 'any_password',
-                password: 'any_password',
-                passwordConfirmation: 'any_password'
+                Name: 'any_password',
+                Password: 'any_password',
+                PasswordConfirmation: 'any_password'
             }
         }
         const httpResponse = sut.handle(httpRequest)
